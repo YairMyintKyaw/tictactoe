@@ -7,21 +7,67 @@
 
 body{
     background-color:var(--black-color);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.container{
+.container1,.container2{
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-}
-
-.turn{
     color: aliceblue;
 }
+.container1{
+    display: none;
+}
+
+.container2>form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container2>form>input{
+    padding: .3rem;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 2px 6px rgba(240, 248, 255, 0.792);
+    background-color: inherit;
+    color: aliceblue;
+    outline: none;
+    margin-bottom: .6rem;
+    transition: all .2s ease;
+}
+
+.container2>form>input::placeholder{
+    font-family:'Courier New', Courier, monospace;
+}
+
+.container2>form>input:focus,.container2>form>input:hover{
+    transform: scale(1.1);
+}
+
+.container2>form>label{
+    font-size: .9rem;
+}
+
+button{
+    padding: .5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border:solid 1px aliceblue;
+    background-color: inherit;
+    color: aliceblue;
+    font-family: inherit;
+    transition: all .2s ease;
+}
+
+button:hover{
+    transform: translateY(-4px);
+}
+
 
 .playBoard{
     display: grid;

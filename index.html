@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container1">
         <h1 class="turn">Player 1's turn</h1>
         <div class="playBoard">
             <div id="1"></div>
@@ -21,6 +21,20 @@
             <div id="8"></div>
             <div id="9"></div>
         </div>
+        <button>Restart</button>
+    </div>
+
+    <div class="container2">
+        <h1>Tic Tac Toe</h1>
+        <form action="">
+            <label for="player1">Player 1's name</label>
+            <input type="text" id="player1" placeholder="Player 1 name" pattern="^[a-zA-Z ]{1,}" required>
+
+            <label for="player2">Player 2's name</label>
+            <input type="text" id="player2"  placeholder="Player 2 name" pattern="^[a-zA-Z ]{1,}" required>
+        </form>
+        <button type="button">Start the game</button>
+        
     </div>
 
     <script src="script.js"></script>
